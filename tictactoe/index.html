@@ -1,0 +1,84 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="only screen">
+        <link rel = "icon" href = "../images/logo.png" >
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+          </style>
+    </head>
+
+    <body>
+        <div class="container">
+        <h2>Tic Tac Toe</h2>
+        
+        <div class="annoucement" id="announce">
+        </div>
+        
+        <table id="game-board">
+            <tr>
+                <td class="cell" id="c0"><button onclick="playerMove(0)"></button></td>
+                <td class="cell" id="c1"><button onclick="playerMove(1)"></button></td>
+                <td class="cell" id="c2"><button onclick="playerMove(2)"></button></td>
+            </tr>
+            <tr>
+                <td class="cell" id="c3"><button onclick="playerMove(3)"></button></td>
+                <td class="cell" id="c4"><button onclick="playerMove(4)"></button></td>
+                <td class="cell" id="c5"><button onclick="playerMove(5)"></button></td>
+            </tr>
+            <tr>
+                <td class="cell" id="c6"><button onclick="playerMove(6)"></button></td>
+                <td class="cell" id="c7"><button onclick="playerMove(7)"></button></td>
+                <td class="cell" id="c8"><button onclick="playerMove(8)"></button></td>
+            </tr>
+        </table>
+
+        <div class="score">
+
+            <table>
+                <tr>
+                    <td class="list" >Comp</td>
+                    <td class="list" >Tie</td>
+                    <td class="list">Player</td>
+                </tr>
+                <tr>
+                    <td class="list" id="comp-score">0</td>
+                    <td class="list" id="tie-score">0</td>
+                    <td class="list" id="player-score">0</td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="reset">
+            <button onclick="reset()">Restart</button>
+        </div>
+
+        <div class="options">
+            <div class="x">
+            </div>
+            <div class="o">
+            </div>
+        </div>
+
+        <div class="home">
+            <form action="../home/home.html" method ="GET">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 84 84" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.6748 7.88407C41.0009 6.70531 42.9992 6.70531 44.3253 7.88407L75.8253 35.8841C77.2701 37.1683 77.4002 39.3805 76.116 40.8253C74.8318 42.27 72.6195 42.4002 71.1748 41.1159L70 40.0717V70C70 73.866 66.866 77 63 77H21C17.134 77 14 73.866 14 70V40.0717L12.8253 41.1159C11.3806 42.4002 9.16832 42.27 7.8841 40.8253C6.59989 39.3805 6.73002 37.1683 8.17476 35.8841L39.6748 7.88407ZM21 33.8495V70H31.5V45.5C31.5 41.634 34.634 38.5 38.5 38.5H45.5C49.366 38.5 52.5 41.634 52.5 45.5V70H63V33.8495L42 15.1828L21 33.8495ZM45.5 70V45.5H38.5V70H45.5Z" fill="white"/>
+                      </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script src = "./script.js"></script>
+    </body>
+
+</html>
