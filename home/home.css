@@ -81,7 +81,7 @@
     height: 300px;
     margin-top: 200px;
     margin-left: -540px;
-    background-color: rgb(203, 227, 255);
+    background-color: rgb(203, 227, 255, 0.9);
     filter: drop-shadow(4px 0px 4px rgba(0, 155, 202, 0.25));
     border-radius: 30px;
     cursor: pointer;
@@ -102,12 +102,39 @@
 
 }
 
-.coming-soon{
+.todo form button{
     position: absolute;
     width: 300px;
     height: 300px;
     margin-top: 200px;
-    margin-left: 460px;
+    margin-left: -150px;
+    background-color: rgb(203, 227, 255, 0.9);
+    filter: drop-shadow(4px 0px 4px rgba(0, 155, 202, 0.25));
+    border-radius: 30px;
+    cursor: pointer;
+    border:none;
+
+}
+
+.todo form button img{
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+
+.todo h1{
+    font-size: 30px;
+    margin-top: -10px;
+    color: rgb(0, 78, 146);
+
+}
+
+.coming-soon button{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 250px;
     background-color: rgba(203, 227, 255, 0.555);
     border-radius: 30px;
     border:none;

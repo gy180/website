@@ -3,9 +3,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="device-width, initial-scale=1.0">
         
-        <title>Tic Tac Toe</title>
+        <title>To Do List</title>
         <link rel="stylesheet" href="todo.css" type="text/css" media="only screen">
         <link rel = "icon" href = "../images/logo.png" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
@@ -13,7 +15,44 @@
     </head>
 
     <body>
-        <div class="container">
+    <div class="container">
+        <div class="box"></div>
+        <!-- home button -->
+        <div class="home">
+            <form action="../home/home.html" method ="GET">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 80 80" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.6748 7.88407C41.0009 6.70531 42.9992 6.70531 44.3253 7.88407L75.8253 35.8841C77.2701 37.1683 77.4002 39.3805 76.116 40.8253C74.8318 42.27 72.6195 42.4002 71.1748 41.1159L70 40.0717V70C70 73.866 66.866 77 63 77H21C17.134 77 14 73.866 14 70V40.0717L12.8253 41.1159C11.3806 42.4002 9.16832 42.27 7.8841 40.8253C6.59989 39.3805 6.73002 37.1683 8.17476 35.8841L39.6748 7.88407ZM21 33.8495V70H31.5V45.5C31.5 41.634 34.634 38.5 38.5 38.5H45.5C49.366 38.5 52.5 41.634 52.5 45.5V70H63V33.8495L42 15.1828L21 33.8495ZM45.5 70V45.5H38.5V70H45.5Z" fill="white"/>
+                      </svg>
+                </button>
+            </form>
+        </div>
+
+        <!-- the todo list body and header -->
+        <div class="todolist">
+            <div class="header">
+                <img src="../images/brown3.jpg" width="100%">
+                <h1>To Do 
+                    <i class="bi bi-clipboard2-fill"></i>
+                </h1>
+                <div class="add-task">
+                    <form id="addtask">
+                        <input type="text" name="newtodo" id="newtodo" placeholder="Add Task" />
+                        <button type="submit">+</i></button>
+                    </form>
+                </div>
+                <!-- actual tasks -->
+                <div class="list-body" id="todolist-body">
+                    <div class="newtodo" id="0">
+                        <p>x</p>
+                        <i class="bi bi-square"></i> 
+                        <i class="bi bi-check-square-fill"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
         
 
     <script src = "/todo.js"></script>
