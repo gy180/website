@@ -26,8 +26,8 @@
     align-items: center;
     justify-content: center;
     width: 450px;
-    height: 600px;
-    background-color: rgb(253, 253, 243);
+    height: 450px;
+    background-color: transparent;
     margin: 0 auto;
     border-radius: 20px;
 }
@@ -43,7 +43,8 @@
 }
 
 .header img{
-    border-radius: 20px 20px 0 0;
+  margin-top: 30px;  
+  border-radius: 20px 20px 0 0;
 }
 
 .bi-clipboard2-fill{
@@ -92,35 +93,40 @@
 
 }
 
-/* task appearance */
-.list-body{
-    margin-top: 15px;
-    width: 100%;
-    height: auto;
-    border-radius: 0 0 20px 20px;
-    background-color: rgb(240, 224, 216);   
-    overflow-y: scroll;
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
+ul li{
+  cursor: pointer;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
 
-.newtodo p{
-    margin-top: -30px;
-    text-align: left;
-    font-size: 25px;
-    color: red;
-    font-family: 'Fredoka', sans-serif;
+  position: relative;
+  width: 400px;
+  text-align: left;
 }
 
-  
-  .newtodo i {
-    cursor: pointer;
-    margin-left: 10px;
-  }
-  
-  .newtodo.done {
-    background-color: #d4edda; /* Background color for completed tasks */
-    text-decoration: line-through; /* Strike-through for completed tasks */
-  }
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #886868;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.delete{
+  font-family: "Fredoka", sans-serif;
+  color: red;
+  font-size: 20px;
+  border:none;
+}
 
 /* scroll bar when it exists */
 ::-webkit-scrollbar{

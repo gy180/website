@@ -29,33 +29,30 @@
         </div>
 
         <!-- the todo list body and header -->
-        <div class="todolist">
-            <div class="header">
-                <img src="../images/brown3.jpg" width="100%">
-                <h1>To Do 
-                    <i class="bi bi-clipboard2-fill"></i>
-                </h1>
-                <div class="add-task">
-                    <form id="addtask">
-                        <input type="text" name="newtodo" id="newtodo" placeholder="Add Task" />
-                        <button type="submit">+</i></button>
-                    </form>
-                </div>
-                <!-- actual tasks -->
-                <div class="list-body" id="todolist-body">
-                    <!-- <div class="newtodo" id="0">
-                        <p>x</p>
-                        <i class="bi bi-square"></i> 
-                        <i class="bi bi-check-square-fill"></i>
-                    </div> -->
-                </div>
+        <div class="header">
+            <img src="../images/brown3.jpg" width="100%">
+            <h1>To Do 
+                <i class="bi bi-clipboard2-fill"></i>
+            </h1>
+            <div class="add-task">
+                <form id="addtask">
+                    <input type="text" name="text" id="newtodo" placeholder="Add Task" />
+                    <button type="submit" onclick="add()">+</i></button>
+                </form>
             </div>
+        <div class="todolist">   
             
+            <!-- actual tasks -->
+            <ul id="tasks">
+                <li>Math homework</li>
+                <li>Buy gift</li>
+            </ul>
+        </div>
         </div>
     </div>
         
 
-    <script src = "/todo.js"></script>
+    <script src = "todo.js"></script>
     </body>
 
 </html>
